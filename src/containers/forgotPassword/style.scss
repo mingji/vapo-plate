@@ -1,0 +1,104 @@
+.login-container {
+  > div {
+    > div {
+      height: calc(100vh - 62px);
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > .logo {
+          svg {
+            fill: #dc1c59;
+          }
+        }
+        > h4 {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        > h6 {
+          font-weight: lighter;
+          font-size: 12px;
+          color: #6f7287;
+        }
+        > p {
+          font-size: 12px;
+          margin: 0;
+          max-width: 330px;
+          width: 100%;
+          color: #6f7287;
+          text-align: center;
+        }
+        .MuiFormControl-root {
+          max-width: 330px;
+          width: 100%;
+          .MuiOutlinedInput-root {
+            height: 50px;
+          }
+        }
+        > button {
+          max-width: 330px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &.facebook {
+            border-color: #4267b2;
+            background-color: #4267b2;
+            font-size: 14px;
+            i {
+              margin-right: 5px;
+            }
+          }
+          &.google {
+            border-color: #dc1c59;
+            background-color: #fff;
+            color: #dc1c59;
+            font-size: 14px;
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+        > .or {
+          font-size: 12px;
+          margin: 0;
+          max-width: 330px;
+          width: 100%;
+          position: relative;
+          color: #6f7287;
+          text-align: center;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 45%;
+            left: 0;
+            top: 50%;
+            background-color: #eee;
+            height: 1px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 45%;
+            right: 0;
+            top: 50%;
+            background-color: #eee;
+            height: 1px;
+          }
+        }
+      }
+    }
+    .invalid-code {
+      text-align: center;
+      color: white;
+      p {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}

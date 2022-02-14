@@ -1,0 +1,12 @@
+.adsListing-container {
+  background-color: #212030;
+  border-left: 1px solid #49485b;
+  width: 0vw;
+  height: calc(100vh - 60px);
+  overflow: scroll;
+  padding: 5px !important;
+  transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

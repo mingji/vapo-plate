@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+.app {
+  // text-align: center;
+  // min-height: 100vh;
+  height: 100%;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*:not(i) {
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .layout {
+    margin: 0;
+    padding: 0;
+    margin-top: 112px;
+    overflow: hidden;
+  }
+}
+.btn-circle {
+  border-radius: 100px;
+}
+.btn-custom {
+  background-color: #dc1c59;
+  color: #fff;
+  &:hover {
+    background-color: #e62600;
+    color: #fff;
+  }
+}
+.btn-outline {
+  background: transparent;
+  // color: #fff;
+  border: 1px solid grey !important;
+}
+.animated {
+  animation-duration: 0.3s;
+}
+.MuiTextField-root {
+  border-radius: 5px;
+}
+// .MuiFilledInput-root {
+//   background-color: rgba(0, 0, 0, 0) !important;
+//   border: 1px solid #d2d2d2 !important;
+// }
+a {
+  color: unset !important;
+  text-decoration: unset !important;
+}
+.w-0 {
+  width: unset !important;
+}
+.h-0 {
+  height: unset !important;
+}
+.MuiCircularProgress-root {
+  color: #dc1c59 !important;
+}
+.layout {
+  background-color: #1f1e2e;
+}
+.bg-light-theme {
+  background-color: #292a3c;
+}
+label#demo-simple-select-filled-label:not(.Mui-focused),
+label#outlined-basic-label:not(.Mui-focused),
+label#date-picker-dialog-label:not(.Mui-focused),
+button.MuiButtonBase-root.MuiIconButton-root {
+  color: #898989;
+}
+input#outlined-basic,
+div#demo-simple-select-filled,
+input#date-picker-dialog,
+p#date-picker-dialog-helper-text,
+.DropzoneArea-dropzoneParagraph-443 {
+  color: #fff;
+}
+.MuiInput-underline:before {
+  border-bottom-color: #898989 !important;
+}
+.MuiPickersDay-daySelected {
+  color: #fff !important;
+}
+
+.dropzone-container > div {
+  background-color: #292a3c !important;
+  border-color: #292a3c;
+  p,
+  svg {
+    color: #fff;
+  }
+}
+
+.react-tenor--suggestions,
+.react-tenor--page-right,
+.react-tenor--page-left {
+  display: none;
+}
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: calc(80vh - 100px);
+  h1 {
+    font-size: 80px;
+  }
+}
+.bg-absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #292a3c;
+  //   header{
+  //     // background-color: #292a3c;
+  //     width: 100%;
+  //     height: 60px;
+  //   }
+  //   section{
+  //     width: 100%;
+  //     height: calc(100vh - 60px);
+  //     position: relative;
+  //     >div{
+  //       width: 50%;
+  //       height: 100%;
+  //       position: absolute;
+  //       // left: 0;
+  //       top: 0;
+  //     }
+  //     >.right{
+  // right: 0;
+  //       background-color: #1f1e2e;
+  //     }.left{
+  //       left: 0;
+  //             background-color: #292a3c;
+  //           }
+  //   }
+}
+.custom-layout-main-section {
+  background: #212030;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  overflow-x: scroll;
+  padding: 0;
+}
+
+.custom-layout-main-section::-webkit-scrollbar {
+  width: 0px;
+}
+
+.custom-layout-main-section::-webkit-scrollbar-track {
+  //   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  //   background-color: #eccec8;
+}
+
+.custom-layout-main-section::-webkit-scrollbar-thumb {
+  // background-color: #474b8d;
+  //   outline: 1px solid slategrey;
+}
+textarea,
+input {
+  color: #fff !important;
+}
+label {
+  color: #ccc !important;
+}
+.add-plus {
+  overflow: hidden;
+}
+.add-plus::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #fff;
+}
+.text-white {
+  color: #fff !important;
+}
+.bg-darker-0 {
+  background-color: #292a3c !important;
+}
+.image-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.MuiTab-wrapper {
+  color: rgba($color: #fff, $alpha: 0.7);
+}
+.Mui-selected {
+  .MuiTab-wrapper {
+    color: #dc1c59;
+  }
+}
+.MuiAccordion-root {
+  background-color: rgba($color: #fff, $alpha: 0.7) !important;
+  &.Mui-expanded {
+    background-color: rgba($color: #fff, $alpha: 1) !important;
+  }
+}
+.transition-3 {
+  transition-duration: 0.3s;
+}
+.delay-3 {
+  transition-delay: 0.3s;
+}
+.border-radius-20 {
+  border-radius: 20px !important;
+}
+.react-tenor--search {
+  color: #000 !important;
+}

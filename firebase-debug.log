@@ -1,0 +1,100 @@
+[debug] [2020-10-11T21:16:43.830Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T21:16:43.833Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2020-10-11T21:16:43.833Z] CLI Version:   8.12.1
+[debug] [2020-10-11T21:16:43.833Z] Platform:      win32
+[debug] [2020-10-11T21:16:43.834Z] Node Version:  v12.19.0
+[debug] [2020-10-11T21:16:43.835Z] Time:          Sun Oct 11 2020 14:16:43 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-10-11T21:16:43.835Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T21:16:43.835Z] 
+[debug] [2020-10-11T21:16:43.843Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-11T21:16:43.844Z] > authorizing via signed-in user
+[debug] [2020-10-11T21:16:43.844Z] [iam] checking project 80846809001 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-11T21:16:43.848Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/80846809001:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-11T21:17:43.472Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-10-11T21:17:43.473Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/80846809001  
+ 
+[debug] [2020-10-11T21:17:43.978Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 21:17:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to '80846809001'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-11T21:19:12.700Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/findfunapp-8b78e/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-11T21:19:13.877Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 21:19:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[findfunapp-8b78e]: beginning deploy... 
+[info] i  hosting[findfunapp-8b78e]: found 92 files in src 
+[debug] [2020-10-11T21:19:13.961Z] [hosting] hash cache [c3Jj] not populated
+[debug] [2020-10-11T21:19:14.078Z] [hosting] hash cache [c3Jj] stored for 92 files
+[debug] [2020-10-11T21:19:14.078Z] [hosting][hash queue][FINAL] {"max":76,"min":25,"avg":51.78260869565217,"active":0,"complete":92,"success":92,"errored":0,"retried":0,"total":92,"elapsed":116}
+[debug] [2020-10-11T21:19:14.079Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/findfunapp-8b78e/versions/6f81243c7b12f0a6:populateFiles  
+ <request body omitted>
+[debug] [2020-10-11T21:28:35.832Z] [populateQueue] Retrying task index 0
+[debug] [2020-10-11T21:28:35.835Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/findfunapp-8b78e/versions/6f81243c7b12f0a6:populateFiles  
+ <request body omitted>
+[debug] [2020-10-11T21:28:49.284Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T21:28:49.287Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2020-10-11T21:28:49.287Z] CLI Version:   8.12.1
+[debug] [2020-10-11T21:28:49.287Z] Platform:      win32
+[debug] [2020-10-11T21:28:49.287Z] Node Version:  v12.19.0
+[debug] [2020-10-11T21:28:49.288Z] Time:          Sun Oct 11 2020 14:28:49 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-10-11T21:28:49.288Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T21:28:49.289Z] 
+[debug] [2020-10-11T21:28:49.297Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-11T21:28:49.298Z] > authorizing via signed-in user
+[debug] [2020-10-11T21:28:49.298Z] [iam] checking project 80846809001 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-11T21:28:49.301Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/80846809001:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-11T21:29:49.481Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-10-11T21:29:49.484Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/80846809001  
+ 
+[debug] [2020-10-11T21:29:49.869Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 21:29:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to '80846809001'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-11T21:29:49.885Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/findfunapp-8b78e/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-11T21:30:49.481Z] Error: Client network socket disconnected before secure TLS connection was established
+    at connResetException (internal/errors.js:609:14)
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1547:19)
+    at Object.onceWrapper (events.js:420:28)
+    at TLSSocket.emit (events.js:326:22)
+    at TLSSocket.EventEmitter.emit (domain.js:483:12)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-10-11T21:31:34.142Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T21:31:34.145Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2020-10-11T21:31:34.145Z] CLI Version:   8.12.1
+[debug] [2020-10-11T21:31:34.145Z] Platform:      win32
+[debug] [2020-10-11T21:31:34.145Z] Node Version:  v12.19.0
+[debug] [2020-10-11T21:31:34.146Z] Time:          Sun Oct 11 2020 14:31:34 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-10-11T21:31:34.146Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T21:31:34.147Z] 
+[debug] [2020-10-11T21:31:34.155Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-11T21:31:34.156Z] > authorizing via signed-in user
+[debug] [2020-10-11T21:31:34.156Z] [iam] checking project 80846809001 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-11T21:31:34.160Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/80846809001:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-11T21:31:34.747Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 21:31:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=102","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-11T21:31:34.754Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/80846809001  
+ 
+[debug] [2020-10-11T21:31:35.107Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 21:31:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to '80846809001'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-11T21:31:35.114Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/findfunapp-8b78e/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-11T21:32:34.486Z] Error: Client network socket disconnected before secure TLS connection was established
+    at connResetException (internal/errors.js:609:14)
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1547:19)
+    at Object.onceWrapper (events.js:420:28)
+    at TLSSocket.emit (events.js:326:22)
+    at TLSSocket.EventEmitter.emit (domain.js:483:12)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established

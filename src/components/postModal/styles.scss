@@ -1,0 +1,33 @@
+.post-modal-container {
+  border-bottom: 1px solid #49485b;
+  .profile {
+    max-width: 40px !important;
+    max-height: 40px !important;
+  }
+  textarea {
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+  }
+  textarea::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  textarea::-webkit-scrollbar-track {
+    //   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    //   background-color: #eccec8;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background-color: #474b8d;
+    //   outline: 1px solid slategrey;
+  }
+  .img-small {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

@@ -1,0 +1,26 @@
+.attende-container {
+  background-color: #27283b;
+  padding: 20px;
+  margin-bottom: 10px;
+  > a {
+    display: flex;
+    min-height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .profile-c-image {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+  .host {
+    > :first-child {
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+}

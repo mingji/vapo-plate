@@ -1,0 +1,114 @@
+.event-container {
+  max-height: 325px;
+  box-shadow: 0 4px 15px 0 rgba(40, 44, 53, 0.06),
+    0 2px 2px 0 rgba(40, 44, 53, 0.08);
+  cursor: pointer;
+  transition-duration: 0.1s;
+  background-color: #292a3c;
+  &:hover {
+    transform: scale(1.05);
+  }
+  > .top-container {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-image: url("https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F82999041%2F161004493072%2F1%2Foriginal.20191129-114841?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=16%2C0%2C1000%2C500&s=5247c30652f0de4e6c80b4eaba539025");
+    background-size: cover;
+    background-position: center;
+    > .action-button {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 40%;
+      z-index: 1000;
+      > div {
+        border-radius: 100px;
+        margin-right: 5px;
+        // background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.1s;
+        &:hover {
+          background-color: #dc1c59;
+          > svg,
+          > img {
+            color: #fff;
+            fill: #fff;
+          }
+        }
+        > svg,
+        > img {
+          width: 50px;
+          height: 50px;
+          width: 100%;
+          // max-width: 15px;
+          height: 100%;
+          // max-height: 15px;
+        }
+      }
+    }
+    > .tag-container {
+      position: relative;
+      .tag {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 5px;
+        width: 87px;
+        height: 36px;
+        border-radius: 4px;
+        background-color: #fff;
+        position: absolute;
+        box-shadow: 0 4px 15px 0 rgba(40, 44, 53, 0.06),
+          0 2px 2px 0 rgba(40, 44, 53, 0.08);
+        z-index: 3;
+        p {
+          font-size: 12px;
+          padding: 10px 5px;
+          margin: 0;
+        }
+        &.tag-free {
+          right: -20px;
+          top: 10px;
+        }
+      }
+    }
+  }
+  .bottom-container {
+    padding: 30px 10px;
+    p {
+      margin: 0;
+      margin-top: 0.5em;
+    }
+    .date {
+      color: #dc1c59;
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 0.8em;
+      color: #39364f;
+      line-height: 1;
+    }
+    .area {
+      font-size: 0.7em;
+      color: #6f7287;
+      //   line-height: 1;
+    }
+  }
+  a.c-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+  }
+}

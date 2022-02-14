@@ -1,0 +1,41 @@
+.promotion-container {
+  background-image: url("https://cdn.evbstatic.com/s3-build/perm_001/ad8d44/django/images/onboarding/desktop_entry_2.jpg");
+  height: 100%;
+  max-height: 325px;
+  box-shadow: 0 4px 15px 0 rgba(40, 44, 53, 0.06),
+    0 2px 2px 0 rgba(40, 44, 53, 0.08);
+  cursor: pointer;
+  transition-duration: 0.1s;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  .heading {
+    font-weight: bold;
+  }
+  .description {
+    font-size: 0.8em;
+  }
+  p {
+    z-index: 1000;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #fff, $alpha: 0.4);
+    // z-index: -1;
+  }
+}

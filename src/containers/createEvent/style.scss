@@ -1,0 +1,27 @@
+.create-new-container {
+  > div {
+    > div {
+      height: calc(100vh - 62px);
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        > h4 {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        > h3 {
+          font-size: 1.675rem;
+          font-weight: bold;
+        }
+        > div {
+          > p {
+            margin: 0;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
